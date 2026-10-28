@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#0b4f4a" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" href="icon-180.png" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20xmlns%3Ac2pa%3D%22http%3A//c2pa.org/manifest%22%3E%3Cmetadata%3E%3Cc2pa%3Amanifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiMDEzZDgxNS0yMTZmLTQ1MDYtYTYyOC00ZDZjYTk3OGFmNDAAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaEfRluy24kaNl%2BumfXjBvBkAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5MWRhNTgwZS0yYTc4LTQ3MmYtOWRjZC03NDE1NjBmZjc0OTNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoKGpf3p53iFuYK4xBhLX2uwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggV674CCmNtxOespZ2o9yW%2BUcmHXKyhblWLLTsb/gSx9akZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEPlRFxxCVnFwVkAUMTXTgkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAJdQI/3PpmMA9THUU4V5ShwWH9sUT7GG%2BcsoEWfhuWUmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiWZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmIwMTNkODE1LTIxNmYtNDUwNi1hNjI4LTRkNmNhOTc4YWY0MC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjQ4YmY2ZWFhLTQ0ZjItNDM4Yy1hMGFkLTkzN2FjZjg5MmZjZHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBXrvgIKY23E56ylnaj3Jb5RyYdcrKFuVYstOxv%2BBLH1qJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg2Ye3P2QFJBK5fS7SnjpqfRQQiySPy2keFEdgsFQLpICiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggjq9eUGx7Yf66iG4iw%2BewwvVR9u2fXv6rK7uUaDBPQ3x0Y2xhaW1fZ2VuZXJhdG9yX2luZm%2BjZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj%2BOPEz5o%2BnMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1%2BUCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9%2B1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNLSmyRnRBii53nbTR3zQPWUvDDIwvOjUwzxqTriUvVwFdmF0lJo6sDOPdgFEdlHTJNnl10P9BIAw0/p8pduFq8%3D%3C/c2pa%3Amanifest%3E%3C/metadata%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2314B8A6%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230B4F4A%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22gold%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FCD34D%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23F59E0B%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22112%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3C%21--%20display%20--%3E%0A%20%20%3Crect%20x%3D%22172%22%20y%3D%22104%22%20width%3D%22168%22%20height%3D%2276%22%20rx%3D%2216%22%20fill%3D%22%230B3B38%22/%3E%0A%20%20%3Crect%20x%3D%22192%22%20y%3D%22124%22%20width%3D%2290%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%235EEAD4%22/%3E%0A%20%20%3Crect%20x%3D%22192%22%20y%3D%22146%22%20width%3D%2260%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%235EEAD4%22%20opacity%3D%22.6%22/%3E%0A%20%20%3C%21--%20neck%20--%3E%0A%20%20%3Crect%20x%3D%22196%22%20y%3D%22180%22%20width%3D%22120%22%20height%3D%2226%22%20fill%3D%22%2399F6E4%22/%3E%0A%20%20%3C%21--%20body%20--%3E%0A%20%20%3Crect%20x%3D%22124%22%20y%3D%22200%22%20width%3D%22264%22%20height%3D%22116%22%20rx%3D%2222%22%20fill%3D%22%23FFFFFF%22/%3E%0A%20%20%3Cg%20fill%3D%22%230F766E%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22190%22%20cy%3D%22238%22%20r%3D%2214%22/%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22238%22%20r%3D%2214%22/%3E%3Ccircle%20cx%3D%22322%22%20cy%3D%22238%22%20r%3D%2214%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22190%22%20cy%3D%22282%22%20r%3D%2214%22/%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22282%22%20r%3D%2214%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ccircle%20cx%3D%22322%22%20cy%3D%22282%22%20r%3D%2214%22%20fill%3D%22%23F59E0B%22/%3E%0A%20%20%3C%21--%20drawer%20--%3E%0A%20%20%3Crect%20x%3D%22108%22%20y%3D%22316%22%20width%3D%22296%22%20height%3D%2270%22%20rx%3D%2218%22%20fill%3D%22%23CCFBF1%22/%3E%0A%20%20%3Crect%20x%3D%22212%22%20y%3D%22342%22%20width%3D%2288%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%230F766E%22/%3E%0A%20%20%3C%21--%20check%20badge%20--%3E%0A%20%20%3Ccircle%20cx%3D%22378%22%20cy%3D%22378%22%20r%3D%2262%22%20fill%3D%22url%28%23gold%29%22%20stroke%3D%22%230B4F4A%22%20stroke-width%3D%2210%22/%3E%0A%20%20%3Cpath%20d%3D%22M350%20380%20L372%20402%20L408%20358%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%3C/svg%3E%0A" />
+    <title>اغلاق كاش</title>
+    
+    <style>
+        /* ─── RESET & BASE ─── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-body: #eef1f5;
+            --bg-wrapper: #ffffff;
+            --bg-card: #f9fafc;
+            --bg-input: #ffffff;
+            --bg-result: #f0f3f8;
+            --bg-total: #e4e9f0;
+            --bg-grand: #d5dce6;
+            --bg-highlight: #1a2a3a;
+            --text-primary: #1a2a3a;
+            --text-secondary: #3d4f60;
+            --text-muted: #7f8c9b;
+            --border-color: #e9edf2;
+            --border-dark: #d0d7df;
+            --shadow: rgba(0, 0, 0, 0.12);
+            --shadow-hover: rgba(26, 42, 58, 0.35);
+            --btn-bg: linear-gradient(135deg, #1a2a3a, #2c3e50);
+            --btn-text: #fff;
+            --result-positive: #1a7a3a;
+            --result-negative: #c0392b;
+            --result-neutral: #1a2a3a;
+            --input-border: #dce1e8;
+            --input-focus: #2c3e50;
+            --date-bg: #ffffff;
+            --popup-bg: #ffffff;
+            --popup-shadow: rgba(0, 0, 0, 0.18);
+            --grand-bg: #1a2a3a;
+            --grand-text: #f0e6d0;
+            --toast-bg: #1a2a3a;
+            --toast-text: #fff;
+        }
+
+        body.dark-mode {
+            --bg-body: #1a1e26;
+            --bg-wrapper: #242a33;
+            --bg-card: #2d343f;
+            --bg-input: #333b47;
+            --bg-result: #3a4452;
+            --bg-total: #3f4a5a;
+            --bg-grand: #4a5568;
+            --bg-highlight: #5a6a7e;
+            --text-primary: #e8edf2;
+            --text-secondary: #c8d0da;
+            --text-muted: #9aa8b8;
+            --border-color: #3d4755;
+            --border-dark: #4f5b6b;
+            --shadow: rgba(0, 0, 0, 0.35);
+            --shadow-hover: rgba(0, 0, 0, 0.5);
+            --btn-bg: linear-gradient(135deg, #3a4a5a, #4a5a6a);
+            --btn-text: #fff;
+            --result-positive: #4caf84;
+            --result-negative: #e57373;
+            --result-neutral: #e8edf2;
+            --input-border: #4a5568;
+            --input-focus: #6a8aaa;
+            --date-bg: #2d343f;
+            --popup-bg: #2d343f;
+            --popup-shadow: rgba(0, 0, 0, 0.5);
+            --grand-bg: #3a4a5a;
+            --grand-text: #e8edf2;
+            --toast-bg: #3a4a5a;
+            --toast-text: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            background: var(--bg-body);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 30px 20px;
+            margin: 0;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .invoice-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            background: var(--bg-wrapper);
+            border-radius: 28px;
+            box-shadow: 0 25px 60px var(--shadow);
+            padding: 30px 35px 40px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        /* ─── HEADER ─── */
+        .invoice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 28px;
+        }
+
+        .invoice-header .title-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .invoice-header .title-group .icon-badge {
+            width: 48px;
+            height: 48px;
+            background: var(--btn-bg);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--grand-text);
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .invoice-header h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.3px;
+            margin: 0;
+        }
+
+        .invoice-header h1 small {
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-right: 10px;
+            letter-spacing: 0;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            border: none;
+            padding: 10px 22px;
+            border-radius: 60px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s ease;
+            font-family: inherit;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-save {
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            box-shadow: 0 6px 18px var(--shadow);
+        }
+
+        .btn-save:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px var(--shadow-hover);
+        }
+
+        .btn-save:active {
+            transform: translateY(0);
+        }
+
+        .btn-reset {
+            background: #c0392b;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
+        }
+
+        .btn-reset:hover {
+            background: #a93226;
+            transform: translateY(-2px);
+        }
+
+        .btn-reset:active {
+            transform: translateY(0);
+        }
+
+        .btn-dark {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1.5px solid var(--border-color);
+        }
+
+        .btn-dark:hover {
+            background: var(--border-color);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        /* ─── TOP META ─── */
+        .top-meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 40px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 14px 22px;
+            margin-bottom: 28px;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            transition: background 0.3s;
+        }
+
+        .top-meta-row .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1 1 200px;
+        }
+
+        .top-meta-row .meta-item label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 15px;
+            white-space: nowrap;
+            min-width: 50px;
+        }
+
+        .top-meta-row .meta-item input[type="text"] {
+            flex: 1;
+            min-width: 140px;
+            padding: 8px 14px;
+            border: 1.5px solid var(--input-border);
+            border-radius: 10px;
+            font-size: 14px;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            outline: none;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .top-meta-row .meta-item input[type="text"]:focus {
+            border-color: var(--input-focus);
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.10);
+        }
+
+        /* ─── DATE PICKER ─── */
+        .date-input-wrap {
+            position: relative;
+            display: inline-block;
+            flex: 1;
+            min-width: 140px;
+        }
+
+        .date-input-wrap .date-display {
+            width: 100%;
+            padding: 8px 14px;
+            border: 1.5px solid var(--input-border);
+            border-radius: 10px;
+            font-size: 14px;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s;
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+        }
+
+        .date-input-wrap .date-display:hover {
+            border-color: var(--border-dark);
+        }
+
+        .date-input-wrap .date-display:focus {
+            border-color: var(--input-focus);
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.10);
+        }
+
+        .date-input-wrap .date-display .date-text {
+            direction: ltr;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .date-input-wrap .date-display .date-icon {
+            font-size: 18px;
+            opacity: 0.6;
+            line-height: 1;
+        }
+
+        .date-picker-popup {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: var(--popup-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 50px var(--popup-shadow);
+            padding: 20px 20px 18px;
+            z-index: 999;
+            display: none;
+            border: 1px solid var(--border-color);
+            min-width: 260px;
+        }
+
+        .date-picker-popup.open {
+            display: block;
+            animation: fadeDown 0.2s ease;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .date-picker-popup .picker-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .date-picker-popup .picker-row select {
+            padding: 8px 12px;
+            border: 1.5px solid var(--input-border);
+            border-radius: 10px;
+            font-size: 14px;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            outline: none;
+            cursor: pointer;
+            font-family: inherit;
+            min-width: 70px;
+            flex: 1;
+        }
+
+        .date-picker-popup .picker-row select:focus {
+            border-color: var(--input-focus);
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.08);
+        }
+
+        .date-picker-popup .picker-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 14px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 14px;
+        }
+
+        .date-picker-popup .picker-actions button {
+            padding: 6px 18px;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .date-picker-popup .picker-actions .btn-picker-ok {
+            background: var(--btn-bg);
+            color: var(--btn-text);
+        }
+
+        .date-picker-popup .picker-actions .btn-picker-ok:hover {
+            opacity: 0.85;
+        }
+
+        .date-picker-popup .picker-actions .btn-picker-cancel {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+        }
+
+        .date-picker-popup .picker-actions .btn-picker-cancel:hover {
+            background: var(--border-color);
+        }
+
+        /* ─── GRID ─── */
+        .invoice-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            margin-bottom: 28px;
+        }
+
+        @media (max-width: 920px) {
+            .invoice-wrapper {
+                padding: 18px 16px 28px;
+            }
+            .invoice-header h1 {
+                font-size: 20px;
+            }
+            .invoice-header h1 small {
+                font-size: 13px;
+                display: block;
+                margin-right: 0;
+                margin-top: 4px;
+            }
+            .top-meta-row {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .top-meta-row .meta-item {
+                flex: 1 1 auto;
+                width: 100%;
+            }
+            .header-actions .btn {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            .header-actions .btn span {
+                display: none;
+            }
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 20px 18px 22px;
+            border: 1px solid var(--border-color);
+            transition: border-color 0.2s, background 0.3s;
+        }
+
+        .section-card:hover {
+            border-color: var(--border-dark);
+        }
+
+        .section-card .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-card .sub-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin: 16px 0 10px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px dashed var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ─── TABLES ─── */
+        .item-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .item-table thead th {
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 13px;
+            padding: 8px 4px 6px;
+            border-bottom: 1px solid var(--border-color);
+            background: transparent;
+        }
+
+        .item-table tbody td {
+            padding: 6px 4px;
+            text-align: center;
+            vertical-align: middle;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .item-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .item-table .result-cell {
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--bg-result);
+            border-radius: 6px;
+            padding: 4px 8px;
+            min-width: 80px;
+            display: inline-block;
+            font-size: 14px;
+            direction: ltr;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .item-table .total-row td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 2px solid var(--border-dark);
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        .item-table .total-row .result-cell {
+            background: var(--bg-total);
+            font-size: 15px;
+        }
+
+        .item-table .grand-total-row td {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-top: 3px solid var(--bg-highlight);
+            font-weight: 800;
+            font-size: 17px;
+            color: var(--text-primary);
+        }
+
+        .item-table .grand-total-row .result-cell {
+            background: var(--bg-grand);
+            font-size: 17px;
+        }
+
+        .item-input {
+            width: 80px;
+            padding: 5px 6px;
+            border: 1.5px solid var(--input-border);
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            transition: all 0.2s;
+            outline: none;
+            font-family: inherit;
+            direction: ltr;
+        }
+
+        .item-input:focus {
+            border-color: var(--input-focus);
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.12);
+        }
+
+        .item-input:hover {
+            border-color: var(--border-dark);
+        }
+
+        .item-input.price-input {
+            width: 80px;
+        }
+
+        .item-input.delivery-input {
+            width: 90px;
+        }
+
+        /* readonly style */
+        .item-input[readonly] {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            cursor: default;
+            opacity: 0.8;
+            border-color: var(--border-color);
+        }
+        .item-input[readonly]:focus {
+            box-shadow: none;
+            border-color: var(--border-color);
+        }
+
+        /* ─── CURRENCY ─── */
+        .currency-section {
+            margin-top: 6px;
+        }
+
+        .currency-section .currency-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 6px;
+            border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .currency-section .currency-row:last-child {
+            border-bottom: none;
+        }
+
+        .currency-section .currency-row .curr-name {
+            font-weight: 700;
+            color: var(--text-primary);
+            min-width: 56px;
+            font-size: 15px;
+        }
+
+        .currency-section .currency-row .curr-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin: 0 2px;
+        }
+
+        .currency-section .currency-row .item-input {
+            width: 72px;
+        }
+
+        .currency-section .currency-row .curr-result {
+            font-weight: 700;
+            color: var(--text-primary);
+            background: var(--bg-result);
+            border-radius: 8px;
+            padding: 4px 14px;
+            min-width: 80px;
+            text-align: center;
+            direction: ltr;
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+
+        .currency-section .currency-total-row {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 6px 4px;
+            border-top: 2px solid var(--border-dark);
+            margin-top: 6px;
+        }
+
+        .currency-section .currency-total-row .total-label {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--text-primary);
+        }
+
+        .currency-section .currency-total-row .total-value {
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--text-primary);
+            background: var(--bg-total);
+            padding: 4px 18px;
+            border-radius: 10px;
+            min-width: 100px;
+            text-align: center;
+            direction: ltr;
+            transition: background 0.3s;
+        }
+
+        /* ─── BOTTOM ─── */
+        .bottom-section {
+            margin-top: 10px;
+            border-top: 2px solid var(--border-color);
+            padding-top: 22px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px 30px;
+            align-items: center;
+        }
+
+        @media (max-width: 700px) {
+            .bottom-section {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bottom-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .bottom-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .bottom-item label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 15px;
+            min-width: 64px;
+        }
+
+        .bottom-item .item-input {
+            width: 80px;
+        }
+
+        .bottom-item .grand-label {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--text-primary);
+            min-width: auto;
+        }
+
+        .bottom-item .grand-value {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text-primary);
+            background: var(--bg-total);
+            padding: 4px 18px;
+            border-radius: 10px;
+            min-width: 120px;
+            text-align: center;
+            display: inline-block;
+            direction: ltr;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .bottom-item .grand-value.highlight {
+            background: var(--grand-bg);
+            color: var(--grand-text);
+        }
+
+        /* ─── SYSTEM TOTAL & DIFFERENCE ─── */
+        .system-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px 40px;
+            padding: 16px 0 10px;
+            border-top: 2px solid var(--border-color);
+            margin-top: 14px;
+        }
+
+        .system-row .sys-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .system-row .sys-item label {
+            font-weight: 700;
+            color: var(--text-secondary);
+            font-size: 16px;
+            white-space: nowrap;
+        }
+
+        .system-row .sys-item .item-input {
+            width: 120px;
+            font-size: 16px;
+            padding: 6px 10px;
+        }
+
+        .system-row .diff-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .system-row .diff-item label {
+            font-weight: 700;
+            color: var(--text-secondary);
+            font-size: 16px;
+            white-space: nowrap;
+        }
+
+        .system-row .diff-item .diff-value {
+            font-size: 20px;
+            font-weight: 800;
+            padding: 4px 20px;
+            border-radius: 10px;
+            min-width: 100px;
+            text-align: center;
+            direction: ltr;
+            background: var(--bg-result);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .diff-value.positive {
+            color: var(--result-positive);
+        }
+
+        .diff-value.negative {
+            color: var(--result-negative);
+        }
+
+        .diff-value.zero {
+            color: var(--result-neutral);
+        }
+
+        /* ─── OVERLAY ─── */
+        .save-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .save-overlay.active {
+            display: flex;
+        }
+
+        .save-overlay .spinner {
+            background: var(--popup-bg);
+            padding: 30px 44px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px var(--popup-shadow);
+            text-align: center;
+        }
+
+        .save-overlay .spinner .dot-pulse {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--bg-highlight);
+            margin: 0 6px;
+            animation: pulse 1.2s infinite ease-in-out both;
+        }
+
+        .save-overlay .spinner .dot-pulse:nth-child(1) {
+            animation-delay: -0.3s;
+        }
+        .save-overlay .spinner .dot-pulse:nth-child(2) {
+            animation-delay: -0.15s;
+        }
+        .save-overlay .spinner .dot-pulse:nth-child(3) {
+            animation-delay: 0;
+        }
+
+        @keyframes pulse {
+            0%,
+            80%,
+            100% {
+                transform: scale(0.6);
+                opacity: 0.4;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .save-overlay .spinner p {
+            margin-top: 14px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: var(--toast-bg);
+            color: var(--toast-text);
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-size: 15px;
+            font-weight: 500;
+            box-shadow: 0 10px 30px var(--shadow);
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: 99999;
+            pointer-events: none;
+            direction: ltr;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ─── PRINT ─── */
+        @media print {
+            body {
+                background: #fff !important;
+                padding: 10px;
+            }
+            .invoice-wrapper {
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+                border-radius: 12px !important;
+                padding: 20px !important;
+                background: #fff !important;
+            }
+            .btn,
+            .btn-save,
+            .btn-reset,
+            .btn-dark {
+                display: none !important;
+            }
+            .item-input {
+                border: 1px solid #ccc !important;
+                background: #fafafa !important;
+            }
+            .section-card {
+                background: #fcfcfc !important;
+                border-color: #ddd !important;
+            }
+            .save-overlay {
+                display: none !important;
+            }
+            .date-picker-popup {
+                display: none !important;
+            }
+            body.dark-mode .invoice-wrapper {
+                background: #fff !important;
+            }
+            body.dark-mode .section-card {
+                background: #fcfcfc !important;
+            }
+            body.dark-mode .item-input {
+                background: #fafafa !important;
+                color: #000 !important;
+            }
+            body.dark-mode .result-cell,
+            body.dark-mode .curr-result,
+            body.dark-mode .total-value,
+            body.dark-mode .grand-value,
+            body.dark-mode .diff-value {
+                background: #f0f0f0 !important;
+                color: #000 !important;
+            }
+            body.dark-mode .grand-value.highlight {
+                background: #1a2a3a !important;
+                color: #f0e6d0 !important;
+            }
+            body.dark-mode .diff-value.positive {
+                color: #1a7a3a !important;
+            }
+            body.dark-mode .diff-value.negative {
+                color: #c0392b !important;
+            }
+        }
+
+        /* ─── RESPONSIVE TWEAKS ─── */
+        @media (min-width: 1200px) {
+            .invoice-wrapper {
+                padding: 40px 50px 50px;
+            }
+            .section-card {
+                padding: 28px 24px 30px;
+            }
+            .item-input {
+                width: 100px;
+            }
+            .item-input.price-input {
+                width: 100px;
+            }
+            .currency-section .currency-row .item-input {
+                width: 90px;
+            }
+            .bottom-item .item-input {
+                width: 100px;
+            }
+            .system-row .sys-item .item-input {
+                width: 150px;
+            }
+        }
+    /* ===== v2 redesign ===== */
+:root{--bg-body:#e8f1f0;--bg-card:#f6fbfa;--bg-result:#e7f3f1;--bg-total:#d5ebe7;--text-primary:#0f2f2c;--text-secondary:#2f5551;--text-muted:#6b8a86;--border-color:#dbe9e7;--border-dark:#c3d9d6;--btn-bg:linear-gradient(135deg,#0f766e,#0b4f4a);--grand-bg:#0b4f4a;--grand-text:#fde68a;--input-border:#cfe1de;--input-focus:#0f766e;--toast-bg:#0b4f4a}
+body.dark-mode{--bg-body:#0b1716;--bg-wrapper:#122523;--bg-card:#17302d;--bg-input:#1d3b37;--bg-result:#1d3b37;--bg-total:#234642;--text-primary:#e6f6f3;--text-secondary:#bcdcd7;--text-muted:#85a9a3;--border-color:#244542;--border-dark:#2f5651;--btn-bg:linear-gradient(135deg,#14b8a6,#0f766e);--grand-bg:#0f766e;--grand-text:#fff;--input-border:#2f5651;--input-focus:#5eead4;--toast-bg:#0f766e}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:contain}
+*{-webkit-tap-highlight-color:transparent}
+body{font-family:'Cairo','Segoe UI',Tahoma,Arial,sans-serif;display:block;padding:0 0 96px;-webkit-user-select:none;user-select:none;touch-action:manipulation}
+input{-webkit-user-select:text;user-select:text}
+.invoice-wrapper{max-width:760px;margin:0 auto;border-radius:0;box-shadow:none;padding:0 14px 20px;background:transparent}
+.invoice-header{position:sticky;top:0;z-index:50;isolation:isolate;overflow:hidden;flex-wrap:nowrap;margin:0 -14px 16px;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px 18px;background:radial-gradient(120% 150% at 100% 0%,rgba(252,211,77,.22) 0,transparent 48%),radial-gradient(100% 130% at 0% 100%,rgba(94,234,212,.2) 0,transparent 52%),linear-gradient(135deg,#14a094 0%,#0f766e 38%,#0b4f4a 100%);border:0;border-radius:0 0 28px 28px;box-shadow:0 14px 32px rgba(11,79,74,.38)}
+.invoice-header::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1.3px),linear-gradient(115deg,transparent 42%,rgba(255,255,255,.07) 50%,transparent 58%);background-size:16px 16px,320px 100%}
+.invoice-header::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;pointer-events:none;background:linear-gradient(90deg,transparent,#fcd34d 25%,#fef3c7 50%,#fcd34d 75%,transparent)}
+.invoice-header .title-group,.invoice-header .header-actions{position:relative;z-index:1}
+.invoice-header .title-group{flex-wrap:nowrap;gap:12px;min-width:0}
+.invoice-header .title-group .icon-badge{width:48px;height:48px;flex:0 0 auto;padding:0;background:none;border-radius:16px;box-shadow:0 0 0 2px rgba(255,255,255,.3),0 8px 18px rgba(0,0,0,.3)}
+.invoice-header h1{color:#fff;font-size:23px;font-weight:800;letter-spacing:-.2px;line-height:1.2;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.28)}
+.invoice-header h1 small{display:block;width:fit-content;margin:6px 0 0;padding:3px 12px;font-size:12px;font-weight:700;letter-spacing:.4px;color:#fde68a;background:rgba(253,230,138,.12);border:1px solid rgba(253,230,138,.38);border-radius:999px;text-shadow:none}
+.icon-badge svg{width:100%;height:100%;border-radius:16px;display:block}
+.header-actions{flex-wrap:nowrap;gap:8px}
+.header-actions .btn-save{display:none}
+.header-actions .btn span{display:none}
+.header-actions .btn{padding:0;width:40px;height:40px;justify-content:center;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.26);border-radius:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 4px 10px rgba(0,0,0,.12);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.header-actions .btn:hover{background:rgba(255,255,255,.26)}
+.header-actions .btn-reset{background:rgba(220,38,38,.85);border-color:rgba(254,202,202,.4)}
+.header-actions .btn-reset:hover{background:rgba(220,38,38,1)}
+.header-actions .btn-menu svg{fill:none}
+.btn:active{transform:scale(.95)}
+.top-meta-row,.section-card,.bottom-section,.system-row{background:var(--bg-card);border:1px solid var(--border-color);border-radius:22px;box-shadow:0 6px 18px rgba(15,118,110,.08)}
+.top-meta-row{margin-bottom:16px;padding:14px 16px}
+.invoice-grid{gap:16px;margin-bottom:16px}
+.section-card{padding:16px 12px 18px}
+.item-table th{background:var(--bg-total);color:var(--text-secondary);font-size:13px;padding:8px 4px}
+.item-table td{padding:5px 3px}
+.item-input{width:100%;max-width:130px;height:46px;font-size:18px;font-weight:700;border-width:2px;border-radius:14px}
+.item-input:focus{border-color:var(--input-focus);box-shadow:0 0 0 4px rgba(20,184,166,.2)}
+.item-input[readonly]{background:var(--bg-result);color:var(--text-muted);border-style:dashed}
+.result-cell{font-size:17px;font-weight:800;font-variant-numeric:tabular-nums}
+.currency-section .currency-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.currency-section .currency-row .curr-name{flex:0 0 100%;font-weight:800}
+.currency-section .currency-row .item-input{flex:1 1 80px;width:auto;min-width:0;max-width:none}
+.currency-section .currency-row .curr-result{flex:1 1 auto;text-align:left}
+.bottom-section{grid-template-columns:1fr 1fr!important;gap:12px!important;padding:16px 12px}
+.bottom-item{flex-direction:column;align-items:stretch;gap:6px}
+.bottom-item label{font-size:14px;font-weight:700;color:var(--text-secondary)}
+.bottom-item .item-input{max-width:none}
+.grand-value.highlight{background:var(--grand-bg);color:var(--grand-text);border-radius:16px;padding:10px 18px;font-size:26px;font-weight:800;text-align:center}
+.system-row{margin-top:16px;padding:14px 16px;justify-content:space-between}
+.system-row .sys-item .item-input{width:150px}
+.diff-value{font-size:24px;font-weight:800}
+.toast{bottom:104px}
+#liveBar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;gap:10px;padding:10px 14px calc(env(safe-area-inset-bottom,0px) + 10px);background:var(--bg-wrapper);border-top:1px solid var(--border-dark);box-shadow:0 -8px 24px rgba(0,0,0,.12)}
+#liveBar .lb{flex:1;min-width:0}
+#liveBar small{display:block;font-size:11px;color:var(--text-muted)}
+#liveBar b{font-size:19px;color:var(--text-primary);font-variant-numeric:tabular-nums}
+#liveBar b.positive{color:var(--result-positive)}
+#liveBar b.negative{color:var(--result-negative)}
+#liveBar .btn{padding:13px 20px;font-size:15px}
+.m-ov{position:fixed;inset:0;z-index:10000;background:rgba(5,20,19,.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:16px}
+.m-box{width:100%;max-width:440px;max-height:92vh;overflow:auto;background:var(--bg-wrapper);color:var(--text-primary);border-radius:24px;padding:20px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.m-box h3{margin-bottom:8px;font-size:19px}
+.m-box img{width:100%;border-radius:14px;border:1px solid var(--border-color);margin:10px 0}
+.m-btns{display:flex;gap:8px;margin-top:12px}
+.m-btns .btn{flex:1;justify-content:center}
+#splash{position:fixed;inset:0;z-index:20000;background:linear-gradient(160deg,#14b8a6,#0b4f4a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#fff;transition:opacity .4s}
+#splash svg{width:112px;height:112px;border-radius:26px;box-shadow:0 12px 30px rgba(0,0,0,.3);animation:pop .6s ease}
+#splash b{font-size:26px}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.side-overlay{position:fixed;inset:0;z-index:300;background:rgba(5,20,19,.55);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s}
+.side-overlay.show{opacity:1;visibility:visible}
+.side-menu{position:fixed;top:0;bottom:0;left:0;z-index:310;width:min(310px,84vw);display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(180deg,var(--bg-wrapper),var(--bg-card));color:var(--text-primary);border-radius:0 28px 28px 0;box-shadow:14px 0 40px rgba(0,0,0,.35);transform:translateX(-105%);visibility:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),visibility .35s}
+.side-menu.open{transform:translateX(0);visibility:visible}
+.side-head{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:calc(env(safe-area-inset-top,0px) + 20px) 18px 18px;color:#fff;background:radial-gradient(120% 140% at 100% 0%,rgba(252,211,77,.22) 0,transparent 50%),linear-gradient(135deg,#14a094,#0b4f4a);overflow:hidden}
+.side-head::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1.3px);background-size:14px 14px}
+.side-brand{position:relative;z-index:1;display:flex;align-items:center;gap:12px;min-width:0}
+.side-logo{flex:0 0 auto;width:46px;height:46px;border-radius:15px;box-shadow:0 0 0 2px rgba(255,255,255,.3),0 6px 14px rgba(0,0,0,.25)}
+.side-logo svg{width:100%;height:100%;display:block;border-radius:15px}
+.side-brand b{display:block;font-size:18px;font-weight:800}
+.side-brand small{display:inline-block;margin-top:4px;padding:2px 10px;font-size:12px;font-weight:700;color:#fde68a;background:rgba(253,230,138,.12);border:1px solid rgba(253,230,138,.38);border-radius:999px}
+.side-close{position:relative;z-index:1;flex:0 0 auto;width:38px;height:38px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.14);color:#fff;border-radius:12px;font-size:15px;font-family:inherit;cursor:pointer}
+.side-nav{flex:1;display:flex;flex-direction:column;gap:12px;padding:18px 14px}
+.side-item{width:100%;display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--border-color);background:var(--bg-card);color:var(--text-primary);border-radius:18px;font-family:inherit;font-size:15px;text-align:right;text-decoration:none;cursor:pointer;box-shadow:0 6px 16px rgba(15,118,110,.08);transition:transform .2s,border-color .2s,box-shadow .2s}
+.side-item:hover{border-color:var(--input-focus);box-shadow:0 10px 22px rgba(15,118,110,.18);transform:translateY(-1px)}
+.side-item:active{transform:scale(.98)}
+.side-ico{flex:0 0 42px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:13px;background:linear-gradient(135deg,#14b8a6,#0f766e);color:#fff;font-size:20px;font-weight:800;box-shadow:0 6px 14px rgba(15,118,110,.3)}
+.side-ico svg{width:20px;height:20px}
+.side-ico-tg{background:linear-gradient(135deg,#38bdf8,#0369a1);box-shadow:0 6px 14px rgba(3,105,161,.3)}
+.side-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.side-txt b{font-size:15px;font-weight:700;color:var(--text-primary)}
+.side-txt small{font-size:12px;color:var(--text-muted)}
+.side-arrow{font-size:24px;line-height:1;color:var(--text-muted)}
+.side-foot{padding:14px 18px calc(env(safe-area-inset-bottom,0px) + 16px);text-align:center;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border-color)}
+.cr-ov{position:fixed;inset:0;z-index:400;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(5,20,19,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s}
+.cr-ov.show{opacity:1;visibility:visible}
+.cr-box{width:100%;max-width:380px;padding:26px 22px 22px;text-align:center;background:var(--bg-wrapper);color:var(--text-primary);border:1px solid var(--border-color);border-radius:26px;box-shadow:0 24px 60px rgba(0,0,0,.45);transform:scale(.92) translateY(10px);transition:transform .3s cubic-bezier(.2,.8,.2,1);user-select:none;-webkit-user-select:none}
+.cr-ov.show .cr-box{transform:none}
+.cr-box *{user-select:text;-webkit-user-select:text}
+.cr-ico{width:60px;height:60px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;border-radius:20px;background:linear-gradient(135deg,#fcd34d,#f59e0b);color:#0b4f4a;font-size:30px;font-weight:800;box-shadow:0 8px 20px rgba(245,158,11,.35)}
+.cr-box h3{margin-bottom:10px;font-size:20px;font-weight:800}
+.cr-box p{margin-bottom:8px;font-size:14px;line-height:1.8;color:var(--text-secondary)}
+.cr-dev{margin:14px 0 18px;padding:10px 14px;border-radius:14px;background:var(--bg-result);font-size:14px;font-weight:600}
+.cr-dev a{color:var(--input-focus);text-decoration:none;direction:ltr;unicode-bidi:isolate}
+.cr-close{width:100%;justify-content:center}
+</style>
+</head>
+<body>
+<svg style="position:absolute;width:0;height:0" aria-hidden="true"><symbol id="logo" viewBox="0 0 512 512">
+<defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14B8A6"/><stop offset="1" stop-color="#0B4F4A"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FCD34D"/><stop offset="1" stop-color="#F59E0B"/></linearGradient></defs>
+<rect width="512" height="512" rx="112" fill="url(#lg1)"/><rect x="172" y="104" width="168" height="76" rx="16" fill="#0B3B38"/><rect x="192" y="124" width="90" height="12" rx="6" fill="#5EEAD4"/><rect x="192" y="146" width="60" height="12" rx="6" fill="#5EEAD4" opacity=".6"/><rect x="196" y="180" width="120" height="26" fill="#99F6E4"/><rect x="124" y="200" width="264" height="116" rx="22" fill="#fff"/>
+<g fill="#0F766E"><circle cx="190" cy="238" r="14"/><circle cx="256" cy="238" r="14"/><circle cx="322" cy="238" r="14"/><circle cx="190" cy="282" r="14"/><circle cx="256" cy="282" r="14"/></g><circle cx="322" cy="282" r="14" fill="#F59E0B"/><rect x="108" y="316" width="296" height="70" rx="18" fill="#CCFBF1"/><rect x="212" y="342" width="88" height="14" rx="7" fill="#0F766E"/>
+<circle cx="378" cy="378" r="62" fill="url(#lg2)" stroke="#0B4F4A" stroke-width="10"/><path d="M350 380L372 402L408 358" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<div id="splash"><svg viewBox="0 0 512 512"><use href="#logo"/></svg><b>اغلاق كاش</b></div>
+<div id="liveBar"><div class="lb"><small>المجموع الكامل</small><b id="lbTotal">0</b></div><div class="lb"><small>الفرق</small><b id="lbDiff">0</b></div><button class="btn btn-save" onclick="saveAsImage()">📷 حفظ كصورة</button></div>
+
+    <div id="toast" class="toast">✅ تم حفظ الصورة بنجاح</div>
+
+    <div id="saveOverlay" class="save-overlay">
+        <div class="spinner">
+            <div class="dot-pulse"></div>
+            <div class="dot-pulse"></div>
+            <div class="dot-pulse"></div>
+            <p>جاري تحضير الصورة ...</p>
+        </div>
+    </div>
+
+    <div class="invoice-wrapper" id="invoiceWrapper">
+
+        
+        <div class="invoice-header">
+            <div class="title-group">
+                <div class="icon-badge"><svg viewBox="0 0 512 512"><use href="#logo"/></svg></div>
+                <h1>
+                    اغلاق كاش
+                    <small>يلبغا</small>
+                </h1>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-dark" id="darkModeToggle" title="الوضع الليلي">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    <span>ليلي</span>
+                </button>
+                <button class="btn btn-reset" id="resetBtn" title="تصفير كل القيم">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                    <span>تصفير</span>
+                </button>
+                <button class="btn btn-menu" id="menuBtn" type="button" title="القائمة" aria-label="القائمة" aria-controls="sideMenu" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h10M4 17h16"/></svg>
+                </button>
+                <button class="btn btn-save" onclick="saveAsImage()">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z"/></svg>
+                    <span>حفظ كصورة</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ─── TOP META ─── -->
+        <div class="top-meta-row">
+            <div class="meta-item">
+                <label>📝 الكاش </label>
+                <input type="text" id="metaTextInput" placeholder="1 - 2 - 3 - 4 ..." />
+            </div>
+            <div class="meta-item">
+                <label>📅 تاريخ</label>
+                <div class="date-input-wrap" id="datePickerWrap">
+                    <div class="date-display" id="dateDisplay">
+                        <span class="date-text" id="dateText">—</span>
+                        <span class="date-icon">📅</span>
+                    </div>
+                    <div class="date-picker-popup" id="datePickerPopup">
+                        <div class="picker-row">
+                            <select id="pickerYear"></select>
+                            <select id="pickerMonth"></select>
+                            <select id="pickerDay"></select>
+                        </div>
+                        <div class="picker-actions">
+                            <button class="btn-picker-cancel" id="pickerCancel">إلغاء</button>
+                            <button class="btn-picker-ok" id="pickerOk">تأكيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── GRID ─── -->
+        <div class="invoice-grid">
+
+            <!--  -->
+            <div class="section-card" id="newSection">
+                <div class="section-title"><span>السوري</span></div>
+
+                <div class="sub-title"><span> فراطة </span></div>
+                <table class="item-table" id="newFrataTable">
+                    <thead><tr><th>الكمية</th><th>السعر</th><th>الإجمالي</th></tr></thead>
+                    <tbody id="newFrataBody">
+                        <tr data-row="8">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="frata" data-row="8" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="500" step="any" min="0" readonly data-section="new" data-type="frata" data-row="8" data-col="price" /></td>
+                            <td><span class="result-cell" id="newFrataRes8">—</span></td>
+                        </tr>
+                        <tr data-row="9">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="frata" data-row="9" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="200" step="any" min="0" readonly data-section="new" data-type="frata" data-row="9" data-col="price" /></td>
+                            <td><span class="result-cell" id="newFrataRes9">—</span></td>
+                        </tr>
+                        <tr data-row="10">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="frata" data-row="10" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="100" step="any" min="0" readonly data-section="new" data-type="frata" data-row="10" data-col="price" /></td>
+                            <td><span class="result-cell" id="newFrataRes10">—</span></td>
+                        </tr>
+                        <tr data-row="11">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="frata" data-row="11" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="50" step="any" min="0" readonly data-section="new" data-type="frata" data-row="11" data-col="price" /></td>
+                            <td><span class="result-cell" id="newFrataRes11">—</span></td>
+                        </tr>
+                        <tr data-row="12">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="frata" data-row="12" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="25" step="any" min="0" readonly data-section="new" data-type="frata" data-row="12" data-col="price" /></td>
+                            <td><span class="result-cell" id="newFrataRes12">—</span></td>
+                        </tr>
+                        <tr data-row="13">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="frata" data-row="13" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="10" step="any" min="0" readonly data-section="new" data-type="frata" data-row="13" data-col="price" /></td>
+                            <td><span class="result-cell" id="newFrataRes13">—</span></td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="2" style="text-align:left; font-weight:700;">المجموع</td>
+                            <td><span class="result-cell" id="newFrataTotal">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="sub-title" style="margin-top:22px;"><span> رزم </span></div>
+                <table class="item-table" id="newRzmTable">
+                    <thead><tr><th>الكمية</th><th>السعر</th><th>الإجمالي</th></tr></thead>
+                    <tbody id="newRzmBody">
+                        <tr data-row="15">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="rzm" data-row="15" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="500" step="any" min="0" readonly data-section="new" data-type="rzm" data-row="15" data-col="price" /></td>
+                            <td><span class="result-cell" id="newRzmRes15">—</span></td>
+                        </tr>
+                        <tr data-row="16">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="rzm" data-row="16" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="200" step="any" min="0" readonly data-section="new" data-type="rzm" data-row="16" data-col="price" /></td>
+                            <td><span class="result-cell" id="newRzmRes16">—</span></td>
+                        </tr>
+                        <tr data-row="17">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="rzm" data-row="17" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="100" step="any" min="0" readonly data-section="new" data-type="rzm" data-row="17" data-col="price" /></td>
+                            <td><span class="result-cell" id="newRzmRes17">—</span></td>
+                        </tr>
+                        <tr data-row="18">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="rzm" data-row="18" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="50" step="any" min="0" readonly data-section="new" data-type="rzm" data-row="18" data-col="price" /></td>
+                            <td><span class="result-cell" id="newRzmRes18">—</span></td>
+                        </tr>
+                        <tr data-row="19">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="rzm" data-row="19" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="25" step="any" min="0" readonly data-section="new" data-type="rzm" data-row="19" data-col="price" /></td>
+                            <td><span class="result-cell" id="newRzmRes19">—</span></td>
+                        </tr>
+                        <tr data-row="20">
+                            <td><input class="item-input qty-input" type="number" value="" step="any" min="0" data-section="new" data-type="rzm" data-row="20" data-col="qty" placeholder="0" /></td>
+                            <td><input class="item-input price-input" type="number" value="10" step="any" min="0" readonly data-section="new" data-type="rzm" data-row="20" data-col="price" /></td>
+                            <td><span class="result-cell" id="newRzmRes20">—</span></td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="2" style="text-align:left; font-weight:700;">المجموع</td>
+                            <td><span class="result-cell" id="newRzmTotal">0</span></td>
+                        </tr>
+                        <tr class="grand-total-row">
+                            <td colspan="2" style="text-align:left; font-weight:800;">🧾 الإجمالي الكامل</td>
+                            <td><span class="result-cell" id="newGrandTotal">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="section-card currency-section" style="grid-column: 1 / -1; margin-top: 0;">
+                <div class="section-title"><span>💱 العملات</span></div>
+
+                
+                <div class="currency-row" data-currency="usd">
+                    <span class="curr-name">🇺🇸 USD</span>
+                    <span class="curr-label">السعر</span>
+                    <input class="item-input curr-price" type="number" value="" step="any" min="0" data-curr="usd" data-field="price" placeholder="0" />
+                    <span class="curr-label">الكمية</span>
+                    <input class="item-input curr-qty" type="number" value="" step="any" min="0" data-curr="usd" data-field="qty" placeholder="0" />
+                    <span class="curr-label">=</span>
+                    <span class="curr-result" id="currResultUsd">—</span>
+                </div>
+
+                
+                <div class="currency-row" data-currency="eur">
+                    <span class="curr-name">🇪🇺 EUR</span>
+                    <span class="curr-label">السعر</span>
+                    <input class="item-input curr-price" type="number" value="" step="any" min="0" data-curr="eur" data-field="price" placeholder="0" />
+                    <span class="curr-label">الكمية</span>
+                    <input class="item-input curr-qty" type="number" value="" step="any" min="0" data-curr="eur" data-field="qty" placeholder="0" />
+                    <span class="curr-label">=</span>
+                    <span class="curr-result" id="currResultEur">—</span>
+                </div>
+
+                
+                <div class="currency-row" data-currency="try">
+                    <span class="curr-name">🇹🇷 TRY</span>
+                    <span class="curr-label">السعر</span>
+                    <input class="item-input curr-price" type="number" value="" step="any" min="0" data-curr="try" data-field="price" placeholder="0" />
+                    <span class="curr-label">الكمية</span>
+                    <input class="item-input curr-qty" type="number" value="" step="any" min="0" data-curr="try" data-field="qty" placeholder="0" />
+                    <span class="curr-label">=</span>
+                    <span class="curr-result" id="currResultTry">—</span>
+                </div>
+
+                <div class="currency-total-row">
+                    <span class="total-label">🧾 مجموع العملات</span>
+                    <span class="total-value" id="currencyTotalDisplay">0</span>
+                </div>
+            </div>
+
+        </div><!-- /invoice-grid -->
+
+        
+        <div class="bottom-section" id="bottomSection">
+            <div class="bottom-item">
+                <label>ضيافة</label>
+                <input class="item-input delivery-input" type="number" value="" step="any" min="0" id="diayfeInput" placeholder="0" />
+            </div>
+            <div class="bottom-item">
+                <label>🔻 حسم</label>
+                <input class="item-input delivery-input" type="number" value="" step="any" min="0" id="hasmInput" placeholder="0" />
+            </div>
+            <div class="bottom-item">
+                <label>💵 شام كاش</label>
+                <input class="item-input delivery-input" type="number" value="" step="any" min="0" id="shamCashInput" placeholder="0" />
+            </div>
+            <div class="bottom-item">
+                <label>⏳ أجل</label>
+                <input class="item-input delivery-input" type="number" value="" step="any" min="0" id="ajelInput" placeholder="0" />
+            </div>
+            <div class="bottom-item">
+                <label>توصيل</label>
+                <input class="item-input delivery-input" type="number" value="" step="any" min="0" id="deliveryInput" placeholder="0" />
+            </div>
+            <div class="bottom-item">
+                <label>↩️ مرتجع</label>
+                <input class="item-input delivery-input" type="number" value="" step="any" min="0" id="martjeInput" placeholder="0" />
+            </div>
+
+            <div class="bottom-item" style="grid-column: 1 / -1; margin-top:6px; padding-top:14px; border-top:2px solid var(--border-color);">
+                <label class="grand-label">المجموع الكامل</label>
+                <span class="grand-value highlight" id="grandTotalDisplay">0</span>
+            </div>
+        </div>
+
+        
+        <div class="system-row" id="systemRow">
+            <div class="sys-item">
+                <label>🖥️ مجموع السيستم</label>
+                <input class="item-input" type="number" value="" step="any" min="0" id="systemTotalInput" placeholder="0" />
+            </div>
+            <div class="diff-item">
+                <label>📊 الفرق</label>
+                <span class="diff-value zero" id="diffDisplay">0</span>
+            </div>
+        </div>
+
+    </div><!-- /invoice-wrapper -->
+
+    <script>
+        
+        function fmt(n) {
+            if (n === undefined || n === null || isNaN(n)) return '—';
+            return Number(n).toLocaleString('en-US');
+        }
+
+        function parseVal(v) {
+            if (v === undefined || v === null || v === '') return NaN;
+            const num = parseFloat(String(v).replace(/,/g, ''));
+            return isNaN(num) ? NaN : num;
+        }
+
+        function getVal(id) {
+            const el = document.getElementById(id);
+            if (!el) return NaN;
+            return parseVal(el.value);
+        }
+
+        function setVal(id, val) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            if (isNaN(val) || val === '') {
+                el.textContent = '—';
+                return;
+            }
+            el.textContent = fmt(val);
+        }
+
+        
+        function calcCurrencyTotals() {
+            const currencies = ['usd', 'eur', 'try'];
+            let total = 0;
+            currencies.forEach((curr) => {
+                const priceEl = document.querySelector(`.currency-row[data-currency="${curr}"] .curr-price`);
+                const qtyEl = document.querySelector(`.currency-row[data-currency="${curr}"] .curr-qty`);
+                const resEl = document.getElementById(`currResult${curr.charAt(0).toUpperCase() + curr.slice(1)}`);
+                const price = parseVal(priceEl ? priceEl.value : '');
+                const qty = parseVal(qtyEl ? qtyEl.value : '');
+                let res = NaN;
+                if (!isNaN(price) && !isNaN(qty) && price >= 0 && qty >= 0) {
+                    res = price * qty;
+                }
+                if (resEl) {
+                    if (isNaN(res)) {
+                        resEl.textContent = '—';
+                    } else {
+                        resEl.textContent = fmt(res);
+                        total += res;
+                    }
+                }
+            });
+            const display = document.getElementById('currencyTotalDisplay');
+            if (display) {
+                display.textContent = fmt(total);
+            }
+            return total;
+        }
+
+        
+        function updateAll() {
+            
+            const newFrataRows = [8, 9, 10, 11, 12, 13];
+            let newFrataSum = 0;
+            newFrataRows.forEach((row) => {
+                const qty = parseVal(document.querySelector(`#newFrataBody input[data-row="${row}"][data-col="qty"]`)
+                    ?.value);
+                const price = parseVal(document.querySelector(`#newFrataBody input[data-row="${row}"][data-col="price"]`)
+                    ?.value);
+                let res = NaN;
+                if (!isNaN(qty) && !isNaN(price) && qty >= 0 && price >= 0) {
+                    res = qty * price;   // 
+                }
+                setVal(`newFrataRes${row}`, res);
+                if (!isNaN(res)) newFrataSum += res;
+            });
+            setVal('newFrataTotal', newFrataSum);
+
+            
+            const newRzmRows = [15, 16, 17, 18, 19, 20];
+            let newRzmSum = 0;
+            newRzmRows.forEach((row) => {
+                const qty = parseVal(document.querySelector(`#newRzmBody input[data-row="${row}"][data-col="qty"]`)
+                    ?.value);
+                const price = parseVal(document.querySelector(`#newRzmBody input[data-row="${row}"][data-col="price"]`)
+                    ?.value);
+                let res = NaN;
+                if (!isNaN(qty) && !isNaN(price) && qty >= 0 && price >= 0) {
+                    res = qty * price * 100;   // 
+                }
+                setVal(`newRzmRes${row}`, res);
+                if (!isNaN(res)) newRzmSum += res;
+            });
+            setVal('newRzmTotal', newRzmSum);
+            const newGrand = (isNaN(newFrataSum) ? 0 : newFrataSum) + (isNaN(newRzmSum) ? 0 : newRzmSum);
+            setVal('newGrandTotal', newGrand);
+
+            
+            const diayfe = getVal('diayfeInput');
+            const hasm = getVal('hasmInput');
+            const shamCash = getVal('shamCashInput');
+            const ajel = getVal('ajelInput');
+            const delivery = getVal('deliveryInput');
+            
+
+            let grandTotal = 0;
+            if (!isNaN(newGrand)) grandTotal += newGrand;
+            if (!isNaN(delivery)) grandTotal += delivery;
+            if (!isNaN(ajel)) grandTotal += ajel;
+            if (!isNaN(diayfe)) grandTotal += diayfe;
+            if (!isNaN(shamCash)) grandTotal += shamCash;
+            if (!isNaN(hasm)) grandTotal += hasm;
+
+            
+            const currTotal = calcCurrencyTotals();
+            if (!isNaN(currTotal)) grandTotal += currTotal;
+
+            const grandEl = document.getElementById('grandTotalDisplay');
+            if (grandEl) {
+                grandEl.textContent = fmt(grandTotal);
+            }
+
+            
+            const systemVal = getVal('systemTotalInput');
+            const diffEl = document.getElementById('diffDisplay');
+            if (!isNaN(systemVal) && !isNaN(grandTotal)) {
+                const diff = grandTotal - systemVal;
+                diffEl.textContent = fmt(diff);
+                diffEl.className = 'diff-value';
+                if (diff > 0) diffEl.classList.add('positive');
+                else if (diff < 0) diffEl.classList.add('negative');
+                else diffEl.classList.add('zero');
+            } else {
+                diffEl.textContent = '—';
+                diffEl.className = 'diff-value zero';
+            }
+        }
+
+        
+        function resetAll() {
+            if (!confirm('هل أنت متأكد من تصفير كل القيم؟')) return;
+
+            document.querySelectorAll('.item-input').forEach((inp) => {
+                if (inp.hasAttribute('readonly')) return;
+                if (inp.type === 'number' || inp.type === 'text') {
+                    inp.value = '';
+                } else {
+                    inp.value = '';
+                }
+            });
+
+            document.querySelectorAll('.currency-row .item-input').forEach((inp) => {
+                inp.value = '';
+            });
+
+            ['diayfeInput', 'hasmInput', 'shamCashInput', 'ajelInput', 'deliveryInput', 'martjeInput', 'systemTotalInput']
+            .forEach((id) => {
+                const el = document.getElementById(id);
+                if (el) el.value = '';
+            });
+
+            const metaText = document.getElementById('metaTextInput');
+            if (metaText) metaText.value = '';
+
+            updateAll();
+            showToast('🔄 تم التصفير بنجاح');
+        }
+
+        
+        let darkMode = false;
+
+        function toggleDarkMode() {
+            darkMode = !darkMode;
+            document.body.classList.toggle('dark-mode', darkMode);
+            const btn = document.getElementById('darkModeToggle');
+            const span = btn.querySelector('span');
+            if (darkMode) {
+                span.textContent = 'نهاري';
+                btn.innerHTML =
+                    `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 0 0 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+                    <span>نهاري</span>`;
+            } else {
+                span.textContent = 'ليلي';
+                btn.innerHTML =
+                    `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    <span>ليلي</span>`;
+            }
+            
+            updateAll();
+        }
+
+        
+        function initDatePicker() {
+            const display = document.getElementById('dateDisplay');
+            const popup = document.getElementById('datePickerPopup');
+            const dateText = document.getElementById('dateText');
+            const pickerYear = document.getElementById('pickerYear');
+            const pickerMonth = document.getElementById('pickerMonth');
+            const pickerDay = document.getElementById('pickerDay');
+            const btnOk = document.getElementById('pickerOk');
+            const btnCancel = document.getElementById('pickerCancel');
+
+            let selectedDate = new Date();
+            let tempYear = selectedDate.getFullYear();
+            let tempMonth = selectedDate.getMonth();
+            let tempDay = selectedDate.getDate();
+
+            function populateYears() {
+                const current = new Date().getFullYear();
+                pickerYear.innerHTML = '';
+                for (let y = current - 20; y <= current + 5; y++) {
+                    const opt = document.createElement('option');
+                    opt.value = y;
+                    opt.textContent = y;
+                    if (y === tempYear) opt.selected = true;
+                    pickerYear.appendChild(opt);
+                }
+            }
+
+            function populateMonths() {
+                pickerMonth.innerHTML = '';
+                const names = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
+                    'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'
+                ];
+                names.forEach((name, i) => {
+                    const opt = document.createElement('option');
+                    opt.value = i;
+                    opt.textContent = name;
+                    if (i === tempMonth) opt.selected = true;
+                    pickerMonth.appendChild(opt);
+                });
+            }
+
+            function populateDays() {
+                pickerDay.innerHTML = '';
+                const daysInMonth = new Date(tempYear, tempMonth + 1, 0).getDate();
+                for (let d = 1; d <= daysInMonth; d++) {
+                    const opt = document.createElement('option');
+                    opt.value = d;
+                    opt.textContent = d;
+                    if (d === tempDay) opt.selected = true;
+                    pickerDay.appendChild(opt);
+                }
+            }
+
+            function updateTempFromSelects() {
+                tempYear = parseInt(pickerYear.value);
+                tempMonth = parseInt(pickerMonth.value);
+                tempDay = parseInt(pickerDay.value);
+            }
+
+            function syncDisplay() {
+                const d = new Date(tempYear, tempMonth, tempDay);
+                const pad = (n) => String(n).padStart(2, '0');
+                dateText.textContent = `${pad(d.getDate())}/${pad(d.getMonth()+1)}/${d.getFullYear()}`;
+                selectedDate = d;
+            }
+
+            function openPopup() {
+                tempYear = selectedDate.getFullYear();
+                tempMonth = selectedDate.getMonth();
+                tempDay = selectedDate.getDate();
+                populateYears();
+                populateMonths();
+                populateDays();
+                pickerYear.value = tempYear;
+                pickerMonth.value = tempMonth;
+                pickerDay.value = tempDay;
+                popup.classList.add('open');
+            }
+
+            function closePopup() {
+                popup.classList.remove('open');
+            }
+
+            display.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (popup.classList.contains('open')) {
+                    closePopup();
+                } else {
+                    openPopup();
+                }
+            });
+
+            pickerYear.addEventListener('change', () => {
+                updateTempFromSelects();
+                populateDays();
+                pickerDay.value = Math.min(tempDay, new Date(tempYear, tempMonth + 1, 0).getDate());
+            });
+            pickerMonth.addEventListener('change', () => {
+                updateTempFromSelects();
+                populateDays();
+                pickerDay.value = Math.min(tempDay, new Date(tempYear, tempMonth + 1, 0).getDate());
+            });
+            pickerDay.addEventListener('change', updateTempFromSelects);
+
+            btnOk.addEventListener('click', () => {
+                updateTempFromSelects();
+                const maxDay = new Date(tempYear, tempMonth + 1, 0).getDate();
+                if (tempDay > maxDay) tempDay = maxDay;
+                syncDisplay();
+                closePopup();
+            });
+
+            btnCancel.addEventListener('click', closePopup);
+
+            document.addEventListener('click', (e) => {
+                const wrap = document.getElementById('datePickerWrap');
+                if (wrap && !wrap.contains(e.target)) {
+                    closePopup();
+                }
+            });
+
+            const today = new Date();
+            tempYear = today.getFullYear();
+            tempMonth = today.getMonth();
+            tempDay = today.getDate();
+            selectedDate = today;
+            syncDisplay();
+        }
+
+        
+        async function saveAsImage() {
+            const overlay = document.getElementById('saveOverlay');
+            overlay.classList.add('active');
+
+            const wrapper = document.getElementById('invoiceWrapper');
+            document.getElementById('datePickerPopup').classList.remove('open');
+
+            const padding = 20;
+            const width = wrapper.scrollWidth + padding * 2;
+            const height = wrapper.scrollHeight + padding * 2;
+
+            try {
+                const canvas = await html2canvas(wrapper, {
+                    scale: 2.5,
+                    useCORS: true,
+                    allowTaint: false,
+                    backgroundColor: getComputedStyle(document.body).getPropertyValue('--bg-wrapper').trim() || '#ffffff',
+                    logging: false,
+                    width: width,
+                    height: height,
+                    x: -padding,
+                    y: -padding,
+                });
+
+                const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+                const reader = new FileReader();
+                const base64 = await new Promise(resolve => {
+                    reader.onload = () => resolve(reader.result.split(',')[1]);
+                    reader.readAsDataURL(blob);
+                });
+
+                if ('showSaveFilePicker' in window) {
+                    try {
+                        const handle = await window.showSaveFilePicker({
+                            suggestedName: `اغلاق_${new Date().toISOString().slice(0,10)}.png`,
+                            types: [{
+                                description: 'صورة PNG',
+                                accept: { 'image/png': ['.png'] },
+                            }],
+                        });
+                        const writable = await handle.createWritable();
+                        await writable.write(blob);
+                        await writable.close();
+                        overlay.classList.remove('active');
+                        showToast('✅ تم حفظ الصورة في الموقع المختار');
+                        return;
+                    } catch (err) {
+                        if (err.name === 'AbortError' || err.message?.includes('abort')) {
+                            overlay.classList.remove('active');
+                            showToast('❌ تم إلغاء الحفظ');
+                            return;
+                        }
+                    }
+                }
+
+                if (window.Android && typeof window.Android.saveImage === 'function') {
+                    try {
+                        window.Android.saveImage(base64, `اغلاق_${new Date().toISOString().slice(0,10)}.png`);
+                        overlay.classList.remove('active');
+                        showToast('✅ تم حفظ الصورة في مجلد الصور');
+                        return;
+                    } catch (e) {
+                        console.warn('فشل استدعاء Native، ننتقل للطريقة الاحتياطية', e);
+                    }
+                }
+
+                const link = document.createElement('a');
+                link.download = `اغلاق_${new Date().toISOString().slice(0,10)}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                overlay.classList.remove('active');
+                showToast('✅ تم حفظ الصورة في مجلد التنزيلات');
+
+            } catch (err) {
+                console.error(err);
+                overlay.classList.remove('active');
+                showToast('❌ حدث خطأ أثناء حفظ الصورة');
+            }
+        }
+
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.classList.add('show');
+            clearTimeout(t._timer);
+            t._timer = setTimeout(() => {
+                t.classList.remove('show');
+            }, 3000);
+        }
+
+        
+        function attachEvents() {
+            document.querySelectorAll('.item-input').forEach((inp) => {
+                inp.addEventListener('input', updateAll);
+                inp.addEventListener('change', updateAll);
+            });
+
+            ['diayfeInput', 'hasmInput', 'shamCashInput', 'ajelInput', 'deliveryInput', 'martjeInput', 'systemTotalInput']
+            .forEach((id) => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', updateAll);
+                    el.addEventListener('change', updateAll);
+                }
+            });
+
+            document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+            document.getElementById('resetBtn').addEventListener('click', resetAll);
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            initDatePicker();
+            attachEvents();
+            updateAll();
+
+            document.addEventListener('keydown', (e) => {
+                if (e.ctrlKey && e.shiftKey && (e.key === 'S' || e.key === 's')) {
+                    e.preventDefault();
+                    saveAsImage();
+                }
+            });
+        });
+
+        window.saveAsImage = saveAsImage;
+    </script>
+
+<script>
+(function(){
+const KEY='iqlaq_cash_v2',W=900,P=36,F='Cairo,Tahoma,Arial,sans-serif';
+const $=id=>document.getElementById(id),vib=n=>{try{navigator.vibrate&&navigator.vibrate(n)}catch(e){}};
+let ready=false;
+const fields=()=>[...document.querySelectorAll('input:not([readonly])')];
+function modal(html,btns){const o=document.createElement('div');o.className='m-ov';o.innerHTML='<div class="m-box">'+html+'<div class="m-btns"></div></div>';
+ btns.forEach(([t,c,f])=>{const b=document.createElement('button');b.className='btn '+c;b.textContent=t;b.onclick=()=>{if(f&&f()===false)return;o.remove()};o.querySelector('.m-btns').appendChild(b)});
+ document.body.appendChild(o)}
+function save(){if(!ready)return;try{localStorage.setItem(KEY,JSON.stringify({v:fields().map(i=>i.value),d:darkMode}))}catch(e){}}
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(!s)return;const f=fields();s.v.forEach((x,i)=>{if(f[i])f[i].value=x});if(s.d&&!darkMode)toggleDarkMode()}catch(e){}}
+function live(){const a=$('lbTotal');if(!a)return;a.textContent=$('grandTotalDisplay').textContent;const d=$('diffDisplay'),e=$('lbDiff');e.textContent=d.textContent;e.className=d.className.replace('diff-value','').trim()}
+const _u=updateAll;updateAll=function(){_u();live();save()};
+const _r=resetAll;
+resetAll=function(){vib(30);modal('<h3>تصفير كل القيم؟</h3><p style="color:var(--text-muted)">سيتم مسح كل الأرقام المدخلة.</p>',[['إلغاء','btn-dark'],['نعم، صفّر','btn-reset',()=>{const c=window.confirm;window.confirm=()=>true;try{_r()}finally{window.confirm=c}}]])};
+
+function items(){
+ const t=id=>$(id).textContent.trim(),n=el=>{const x=parseFloat(el.value);return isNaN(x)?'—':fmt(x)};
+ const tb=b=>[...document.querySelectorAll('#'+b+' tr[data-row]')].map(tr=>{const i=tr.querySelectorAll('input');return ['tr',[n(i[1]),n(i[0]),tr.querySelector('.result-cell').textContent.trim()]]});
+ const L=[['sec','السوري - فراطة'],['th'],...tb('newFrataBody'),['kv','المجموع',t('newFrataTotal')],['sec','السوري - رزم'],['th'],...tb('newRzmBody'),['kv','المجموع',t('newRzmTotal')],['big','الإجمالي الكامل (سوري)',t('newGrandTotal')],['sec','العملات'],['th',['العملة','السعر × الكمية','الإجمالي']]];
+ document.querySelectorAll('.currency-row').forEach(r=>{const i=r.querySelectorAll('input');L.push(['tr',[r.dataset.currency.toUpperCase(),n(i[0])+' × '+n(i[1]),r.querySelector('.curr-result').textContent.trim()]])});
+ L.push(['kv','مجموع العملات',t('currencyTotalDisplay')],['sec','بنود أخرى']);
+ ['diayfeInput','hasmInput','shamCashInput','ajelInput','deliveryInput','martjeInput'].forEach(id=>L.push(['kv',$(id).previousElementSibling.textContent.replace(/[^\u0600-\u06FF\s]/g,'').trim(),n($(id))]));
+ L.push(['big','المجموع الكامل',t('grandTotalDisplay')],['kv','مجموع السيستم',n($('systemTotalInput'))],['big','الفرق',t('diffDisplay'),$('diffDisplay').className]);
+ return L}
+function draw(c,L){
+ const rr=(x,y,w,h,r)=>{c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()};
+ const cols=(a,y)=>{c.textAlign='right';c.fillText(a[0],W-P-18,y);c.textAlign='center';c.fillText(a[1],W/2,y);c.textAlign='left';c.fillText(a[2],P+18,y)};
+ const LR=(k,v,y)=>{c.textAlign='right';c.fillText(k,W-P-18,y);c.textAlign='left';c.fillText(v,P+18,y)};
+ c.direction='rtl';c.fillStyle='#0b4f4a';c.fillRect(0,0,W,150);
+ c.textAlign='right';c.fillStyle='#fff';c.font='800 46px '+F;c.fillText('اغلاق كاش',W-P,72);
+ c.fillStyle='#99f6e4';c.font='600 26px '+F;c.fillText(document.querySelector('.invoice-header h1 small').textContent.trim(),W-P,114);
+ c.textAlign='left';c.fillStyle='#fde68a';c.font='700 30px '+F;c.fillText($('dateText').textContent,P,70);
+ c.fillStyle='#ccfbf1';c.font='600 24px '+F;c.fillText('الكاش: '+($('metaTextInput').value||'—'),P,114);
+ let y=170,z=0;
+ L.forEach(([k,a,b,cl])=>{
+  if(k==='sec'){y+=14;c.fillStyle='#0f766e';rr(P,y,W-2*P,50,14);c.fill();c.fillStyle='#fff';c.font='800 28px '+F;c.textAlign='right';c.fillText(a,W-P-18,y+35);y+=62;z=0}
+  else if(k==='th'){c.fillStyle='#64807c';c.font='700 22px '+F;cols(a||['الفئة','الكمية','الإجمالي'],y+28);y+=40}
+  else if(k==='tr'){if(z++%2){c.fillStyle='#f1f8f7';c.fillRect(P,y,W-2*P,46)}c.fillStyle='#0f2f2c';c.font='600 26px '+F;cols(a,y+33);y+=46}
+  else if(k==='kv'){c.fillStyle='#0f2f2c';c.font='700 27px '+F;LR(a,b,y+36);c.fillStyle='#dbe9e7';c.fillRect(P,y+50,W-2*P,2);y+=58}
+  else if(k==='big'){let vc='#fde68a';if(cl&&cl.indexOf('positive')>-1)vc='#4ade80';if(cl&&cl.indexOf('negative')>-1)vc='#fca5a5';
+   y+=8;c.fillStyle='#0b4f4a';rr(P,y,W-2*P,74,18);c.fill();c.fillStyle='#fff';c.font='800 28px '+F;c.textAlign='right';c.fillText(a,W-P-20,y+48);c.fillStyle=vc;c.font='800 38px '+F;c.textAlign='left';c.fillText(b,P+20,y+50);y+=86}
+ });
+ c.textAlign='center';c.fillStyle='#8aa5a1';c.font='500 20px '+F;c.fillText(new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}),W/2,y+34);
+ return y+60}
+function make(){const L=items(),tmp=document.createElement('canvas');tmp.width=W;tmp.height=4000;const h=draw(tmp.getContext('2d'),L);
+ const c=document.createElement('canvas'),S=2;c.width=W*S;c.height=h*S;const x=c.getContext('2d');x.scale(S,S);x.fillStyle='#fff';x.fillRect(0,0,W,h);draw(x,L);return c}
+window.saveAsImage=async function(){
+ vib(20);
+ try{
+  const blob=await new Promise(r=>make().toBlob(r,'image/png')),url=URL.createObjectURL(blob);
+  const name='اغلاق_'+new Date().toISOString().slice(0,10)+'.png',file=new File([blob],name,{type:'image/png'});
+  const can=!!(navigator.canShare&&navigator.canShare({files:[file]}));
+  const dl=['تنزيل','btn-save',()=>{const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();showToast('✅ تم إرسال الصورة للتنزيل');return false}];
+  const sh=['مشاركة','btn-save',()=>{navigator.share({files:[file],title:'اغلاق كاش'}).catch(()=>{});return false}];
+  modal('<h3>تقرير الإغلاق جاهز</h3><img src="'+url+'" alt=""><p style="font-size:12px;color:var(--text-muted)">إذا لم يعمل التنزيل: اضغط مطولاً على الصورة واختر حفظ.</p>',(can?[sh]:[]).concat([dl,['إغلاق','btn-dark']]));
+ }catch(e){showToast('❌ تعذّر إنشاء الصورة')}};
+
+document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('input[type=number]').forEach(i=>{i.setAttribute('inputmode','decimal');i.setAttribute('enterkeyhint','next');i.addEventListener('focus',()=>{try{i.select()}catch(e){}})});
+ document.addEventListener('keydown',e=>{if(e.key!=='Enter'||e.target.tagName!=='INPUT')return;const f=fields(),i=f.indexOf(e.target);e.preventDefault();if(f[i+1])f[i+1].focus();else e.target.blur()});
+ load();ready=true;updateAll();
+ const s=$('splash');setTimeout(()=>{s.style.opacity=0;setTimeout(()=>s.remove(),450)},900);
+});
+})();
+</script>
+<div class="side-overlay" id="sideOverlay"></div>
+<aside class="side-menu" id="sideMenu" aria-hidden="true" aria-label="القائمة الجانبية">
+    <div class="side-head">
+        <div class="side-brand">
+            <div class="side-logo"><svg viewBox="0 0 512 512"><use href="#logo"/></svg></div>
+            <div>
+                <b>اغلاق كاش</b>
+                <small>يلبغا</small>
+            </div>
+        </div>
+        <button class="side-close" id="sideClose" type="button" aria-label="إغلاق القائمة">✕</button>
+    </div>
+    <nav class="side-nav">
+        <button class="side-item" id="openCopyright" type="button">
+            <span class="side-ico">©</span>
+            <span class="side-txt">
+                <b>حقوق النشر</b>
+                <small>معلومات الملكية والترخيص</small>
+            </span>
+            <span class="side-arrow">‹</span>
+        </button>
+        <a class="side-item" href="https://t.me/algrandson" target="_blank" rel="noopener noreferrer">
+            <span class="side-ico side-ico-tg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </span>
+            <span class="side-txt">
+                <b>حسابي على تيليجرام</b>
+                <small dir="ltr">@algrandson</small>
+            </span>
+            <span class="side-arrow">‹</span>
+        </a>
+    </nav>
+    <div class="side-foot">© 2026 · جميع الحقوق محفوظة</div>
+</aside>
+
+<div class="cr-ov" id="crOverlay" aria-hidden="true">
+    <div class="cr-box" role="dialog" aria-modal="true" aria-labelledby="crTitle">
+        <div class="cr-ico">©</div>
+        <h3 id="crTitle">حقوق النشر</h3>
+        <p>© 2026 اغلاق كاش. جميع الحقوق محفوظة.</p>
+        <p>يُمنع نسخ هذا التطبيق أو إعادة توزيعه أو تعديله دون إذن خطي من المطوّر.</p>
+        <div class="cr-dev">المطوّر: <a href="https://t.me/algrandson" target="_blank" rel="noopener noreferrer">@algrandson</a></div>
+        <button class="btn btn-save cr-close" id="crClose" type="button">إغلاق</button>
+    </div>
+</div>
+
+<script>
+(function(){
+    const $ = id => document.getElementById(id);
+    const menu = $('sideMenu'), ov = $('sideOverlay'), menuBtn = $('menuBtn');
+    const cr = $('crOverlay');
+
+    function openMenu(){
+        menu.classList.add('open');
+        ov.classList.add('show');
+        menu.setAttribute('aria-hidden', 'false');
+        menuBtn.setAttribute('aria-expanded', 'true');
+    }
+    function closeMenu(){
+        menu.classList.remove('open');
+        ov.classList.remove('show');
+        menu.setAttribute('aria-hidden', 'true');
+        menuBtn.setAttribute('aria-expanded', 'false');
+    }
+    function openCr(){
+        cr.classList.add('show');
+        cr.setAttribute('aria-hidden', 'false');
+        setTimeout(() => $('crClose').focus(), 60);
+    }
+    function closeCr(){
+        cr.classList.remove('show');
+        cr.setAttribute('aria-hidden', 'true');
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    $('sideClose').addEventListener('click', closeMenu);
+    ov.addEventListener('click', closeMenu);
+    $('openCopyright').addEventListener('click', () => { closeMenu(); openCr(); });
+    $('crClose').addEventListener('click', closeCr);
+    cr.addEventListener('click', e => { if (e.target === cr) closeCr(); });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') { closeCr(); closeMenu(); }
+    });
+})();
+</script>
+</body>
+</html>
